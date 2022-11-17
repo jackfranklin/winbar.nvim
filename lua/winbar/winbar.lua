@@ -54,18 +54,9 @@ local excludes = function()
 end
 
 M.init = function()
-	print(vim.inspect(f.isempty(opts.colors.path)))
-	if f.isempty(opts.colors.path) then
-		hl_winbar_path = "MsgArea"
-	else
-		vim.api.nvim_set_hl(0, hl_winbar_path, { fg = "black", bg = "#e6e9ef" })
-	end
+	vim.api.nvim_set_hl(0, hl_winbar_path, { fg = "black", bg = "#e6e9ef" })
 
-	if f.isempty(opts.colors.file_name) then
-		hl_winbar_file = "String"
-	else
-		vim.api.nvim_set_hl(0, hl_winbar_file, { fg = "#40A02B", bg = "#e6e9ef" })
-	end
+	vim.api.nvim_set_hl(0, hl_winbar_file, { fg = "#40A02B", bg = "#e6e9ef" })
 end
 
 M.show_winbar = function()

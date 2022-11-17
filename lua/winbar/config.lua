@@ -3,11 +3,6 @@ local M = {}
 M.defaults = {
 	show_file_path = true,
 
-	colors = {
-		path = "#e6e9ef",
-		file_name = "red",
-	},
-
 	icons = {
 		seperator = ">",
 		editor_state = "●",
