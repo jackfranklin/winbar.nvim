@@ -38,7 +38,7 @@ local winbar_file = function()
 					.. " %*"
 			end
 		end
-		value = value .. "%#" .. hl_winbar_file .. "#" .. filename .. "%*"
+		value = value .. "%#" .. hl_winbar_file .. "#" .. filename .. " %m" .. "%*"
 	end
 
 	return value
