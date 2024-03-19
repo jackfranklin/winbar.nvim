@@ -38,7 +38,9 @@ local winbar_file = function()
 end
 
 local excludes = function()
-  if vim.tbl_contains(opts.exclude_filetype, vim.bo.filetype) then
+  if
+    vim.tbl_contains(opts.exclude_filetype, vim.bo.filetype) or vim.tbl_contains(opts.exclude_buftype, vim.bo.buftype)
+  then
     vim.opt_local.winbar = nil
     return true
   end

@@ -24,6 +24,10 @@ M.defaults = {
     "toggleterm",
     "qf",
   },
+
+  exclude_buftype = {
+    "nofile",
+  },
 }
 
 M.options = {}
